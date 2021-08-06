@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+        <title> LIFF TEST</title>
+    </head>
+
+    <body>
+        <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js">
+        </script>
+
+        <script>
+            async function main(){
+                await liff.init({liffId:"#"})
+                await liff.shareTargetPicker([
+                    {
+                        type:"flex",
+                        altText:"Flex Messege share from target picker",
+                        content:{
+                                    "type": "bubble",
+                                    "hero": {
+                                        "type": "image",
+                                        "url": "https://www.img.in.th/images/83504a72a7c2e847fbc48ffdef7f430a.jpg",
+                                        "size": "full",
+                                        "aspectRatio": "20:13",
+                                        "aspectMode": "cover",
+                                        "backgroundColor": "#650707FF",
+                                        "action": {
+                                        "type": "uri",
+                                        "label": "Line",
+                                        "uri": "https://linecorp.com/"
+                                        }
+                                    },
+                                    "body": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "backgroundColor": "#D7F55DFF",
+                                        "borderColor": "#CBF000FF",
+                                        "contents": [
+                                        {
+                                            "type": "text",
+                                            "text": "เว็บ ดี ชื่อ มงคล",
+                                            "weight": "bold",
+                                            "size": "xl",
+                                            "color": "#C53636FF",
+                                            "align": "center",
+                                            "contents": []
+                                        }
+                                        ]
+                                    },
+                                    "footer": {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "flex": 0,
+                                        "spacing": "sm",
+                                        "backgroundColor": "#D7F55DFF",
+                                        "contents": [
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "ติดต่อแอดมิน",
+                                            "uri": "https://linecorp.com"
+                                            },
+                                            "color": "#821717FF",
+                                            "margin": "xxl",
+                                            "height": "sm",
+                                            "style": "primary"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "สอบถามโปรโมชั่น",
+                                            "uri": "https://linecorp.com"
+                                            },
+                                            "color": "#821717FF",
+                                            "height": "sm",
+                                            "style": "primary"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "สมัครสมาชิก",
+                                            "uri": "https://linecorp.com"
+                                            },
+                                            "color": "#821717FF",
+                                            "style": "primary"
+                                        },
+                                        {
+                                            "type": "spacer",
+                                            "size": "xxl"
+                                        }
+                                        ]
+                                    }
+                                    }                 
+                
+                }
+                ])
+                liff.closeWindow()
+            }
+            main()
+        </script>
+    </body>
+</html>
