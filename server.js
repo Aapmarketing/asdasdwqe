@@ -1,12 +1,12 @@
-const express = require("express")
-const app = express()
-const PORT = process.env.PORT || 8080
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 5000;
+const myLiffId = process.env.MY_LIFF_ID;
 
+app.use(express.static('public'));
 
-app.get("/", (req, res)=>{
-    res.json({result: "ok", data:[1,2,3,4,5]})
-})
+app.get('/send-id', function(req, res) {
+    res.json({id: myLiffId});
+});
 
-app.listen(PORT, ()=>{
-    console.log(`Serer is running. ${PORT}`)
-})
+app.listen(port, () => console.log(`app listening on port ${port}!`));
