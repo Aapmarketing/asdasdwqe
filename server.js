@@ -68,7 +68,7 @@ async function test(){
                                 "action": {
                                 "type": "uri",
                                 "label": "ติดต่อแอดมิน",
-                                "uri": "https://linecorp.com"
+                                "uri": "https://liff.line.me/1656291917-KwOD9bba"
                                 },
                                 "color": "#821717FF",
                                 "margin": "xxl",
@@ -80,7 +80,7 @@ async function test(){
                                 "action": {
                                 "type": "uri",
                                 "label": "สอบถามโปรโมชั่น",
-                                "uri": "https://linecorp.com"
+                                "uri": "https://liff.line.me/1656291917-KwOD9bba"
                                 },
                                 "color": "#821717FF",
                                 "height": "sm",
@@ -91,7 +91,7 @@ async function test(){
                                 "action": {
                                 "type": "uri",
                                 "label": "สมัครสมาชิก",
-                                "uri": "https://linecorp.com"
+                                "uri": "https://liff.line.me/1656291917-KwOD9bba"
                                 },
                                 "color": "#821717FF",
                                 "style": "primary"
