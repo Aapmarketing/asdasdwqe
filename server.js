@@ -13,7 +13,8 @@ app.get('/test',function(req,res) {
 });
 
 app.get('/', function(req, res) {
-    res.json({id: myLiffId});
+    res.json({message:'connected!'});
+    // res.json({id: myLiffId});
 });
 
 app.listen(port, () => console.log(`app listening on port ${port}!`));
